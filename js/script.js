@@ -33,3 +33,22 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', onScroll);
     
 });
+
+// ===== COOKIE BANNER =====
+window.addEventListener('load', function() {
+  var decision = localStorage.getItem('cookieDecision');
+  if (!decision) {
+    document.getElementById('cookieBanner').style.display = 'flex';
+  }
+});
+
+function aceptarCookies() {
+  localStorage.setItem('cookieDecision', 'aceptado');
+  document.getElementById('cookieBanner').style.display = 'none';
+}
+
+function rechazarCookies() {
+  localStorage.setItem('cookieDecision', 'rechazado');
+  document.getElementById('cookieBanner').style.display = 'none';
+}
+
