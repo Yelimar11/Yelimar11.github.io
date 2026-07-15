@@ -64,12 +64,19 @@
 
     <main>
         <section id="hero">
-            <div class="container">
-                <h1>Hello, I'm Yelimar Rivera</h1>
-                <h2>Frontend Developer in training</h2>
-                <a href="#projects" class="boton">See My Projects</a>
-            </div>
-        </section>
+    <!-- Video de fondo -->
+    <video autoplay muted loop playsinline id="hero-video">
+        <source src="video_background.mp4" type="video/mp4">
+    </video>
+    <!-- Overlay oscuro encima del video -->
+    <div class="hero-overlay"></div>
+    <!-- Contenido encima del video -->
+    <div class="container">
+        <h1>Hello, I'm Yelimar Rivera</h1>
+        <h2>Frontend Developer in training</h2>
+        <a href="#projects" class="boton">See My Projects</a>
+    </div>
+</section>
 
         <section id="about-me">
             <div class="container">
