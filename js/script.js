@@ -88,7 +88,7 @@ if (formContact) {
                     btnSubmit.textContent = 'Enviar Mensaje';
                     btnSubmit.disabled = false;
                     document.getElementById('form-success').style.display = 'none';
-                }, 6000);
+                }, 3000);
             } else {
                 //  Error del servidor
                 throw new Error('Error del servidor');
