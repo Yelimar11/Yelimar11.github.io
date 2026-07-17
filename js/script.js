@@ -82,6 +82,13 @@ if (formContact) {
                 document.getElementById('form-error').style.display = 'none';
                 formContact.reset();
                 btnSubmit.textContent = 'Mensaje Enviado ✅';
+
+
+                setTimeout(function() {
+                    btnSubmit.textContent = 'Enviar Mensaje';
+                    btnSubmit.disabled = false;
+                    document.getElementById('form-success').style.display = 'none';
+                }, 6000);
             } else {
                 //  Error del servidor
                 throw new Error('Error del servidor');
