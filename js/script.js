@@ -52,3 +52,47 @@ function rechazarCookies() {
   document.getElementById('cookieBanner').style.display = 'none';
 }
 
+// ===== FORMULARIO DE CONTACTO =====
+const formContact = document.getElementById('formContact');
+
+if (formContact) {
+    formContact.addEventListener('submit', async function(e) {
+        //  Evita que el navegador redirija a Formspree
+        e.preventDefault();
+
+        //  Cambia el botón para indicar que está enviando
+        const btnSubmit = document.getElementById('btn-submit');
+        btnSubmit.textContent = 'Enviando...';
+        btnSubmit.disabled = true;
+
+        //  Recoge los datos del formulario
+        const formData = new FormData(formContact);
+
+        try {
+            //  Envia los datos a Formspree en segundo plano
+            const response = await fetch(formContact.action, {
+                method: 'POST',
+                body: formData,
+                headers: { 'Accept': 'application/json' }
+            });
+
+            if (response.ok) {
+                //  Éxito: mostrar mensaje y limpiar formulario
+                document.getElementById('form-success').style.display = 'block';
+                document.getElementById('form-error').style.display = 'none';
+                formContact.reset();
+                btnSubmit.textContent = 'Mensaje Enviado ✅';
+            } else {
+                //  Error del servidor
+                throw new Error('Error del servidor');
+            }
+        } catch (error) {
+            //  Error de red o servidor
+            document.getElementById('form-error').style.display = 'block';
+            document.getElementById('form-success').style.display = 'none';
+            btnSubmit.textContent = 'Enviar Mensaje';
+            btnSubmit.disabled = false;
+        }
+    });
+}
+
