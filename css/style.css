@@ -719,6 +719,8 @@ header nav a:hover::after {
     text-align: center;
     color: #7DF9FF;
     font-size: 15px;
+    opacity: 1;
+    transition: opacity 0.8s ease;
 }
 
 #form-error {
