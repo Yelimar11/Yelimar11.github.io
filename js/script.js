@@ -84,10 +84,22 @@ if (formContact) {
                 btnSubmit.textContent = 'Mensaje Enviado ✅';
 
 
+                // Después de 3 segundos inicia el fade out
                 setTimeout(function() {
+                    const successMsg = document.getElementById('form-success');
+
+                    // 1. Inicia la transición de opacidad a 0 (fade out)
+                    successMsg.style.opacity = '0';
+
+                    // 2. Después de que termine la transición (0.8s) oculta el elemento
+                    setTimeout(function() {
+                        successMsg.style.display = 'none';
+                        successMsg.style.opacity = '1';
+                    }, 800);
+
+                    // 3. Reactiva el botón
                     btnSubmit.textContent = 'Enviar Mensaje';
                     btnSubmit.disabled = false;
-                    document.getElementById('form-success').style.display = 'none';
                 }, 3000);
             } else {
                 //  Error del servidor
