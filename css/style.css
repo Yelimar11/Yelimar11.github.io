@@ -708,4 +708,33 @@ header nav a:hover::after {
   font-size: 13px;
   font-weight: 500;
 }
-/* ===== FIN COOKIE BANNER ===== */
+
+/* ===== FORMULARIO MENSAJES ===== */
+#form-success {
+    background: rgba(125, 249, 255, 0.1);
+    border: 1.5px solid #7DF9FF;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #7DF9FF;
+    font-size: 15px;
+}
+
+#form-error {
+    background: rgba(255, 99, 99, 0.1);
+    border: 1.5px solid #ff6363;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ff6363;
+    font-size: 15px;
+}
+
+.btn-submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
