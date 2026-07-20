@@ -739,4 +739,44 @@ header nav a:hover::after {
     cursor: not-allowed;
 }
 
+/* ===== FILTROS DE PROYECTOS ===== */
+.project-filters {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.filter-btn {
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: 1.5px solid #7DF9FF;
+    background: transparent;
+    color: #7DF9FF;
+    font-size: 13px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    background: #7DF9FF;
+    color: #1A1A2E;
+}
+
+.filter-btn.active {
+    background: #7DF9FF;
+    color: #1A1A2E;
+    font-weight: 600;
+}
+
+.project-item {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.project-item.hidden {
+    display: none;
+}
+
 
