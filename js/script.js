@@ -115,3 +115,21 @@ if (formContact) {
     });
 }
 
+// ===== FILTROS DE PROYECTOS =====
+function filterProjects(category, btn) {
+    // Actualizar botón activo
+    document.querySelectorAll('.filter-btn').forEach(b => {
+        b.classList.remove('active');
+    });
+    btn.classList.add('active');
+
+    // Mostrar u ocultar proyectos
+    document.querySelectorAll('.project-item').forEach(item => {
+        if (category === 'all' || item.dataset.category === category) {
+            item.classList.remove('hidden');
+        } else {
+            item.classList.add('hidden');
+        }
+    });
+}
+
