@@ -148,31 +148,78 @@
         <section id="projects">
             <div class="container">
                 <h2 data-aos="fade-down">My Projects</h2>
+
+                <!-- Filtros -->
+                <div class="project-filters" data-aos="fade-up">
+                    <button class="filter-btn active" onclick="filterProjects('all', this)">Todos</button>
+                    <button class="filter-btn" onclick="filterProjects('html', this)">HTML/CSS/JS</button>
+                    <button class="filter-btn" onclick="filterProjects('wordpress', this)">WordPress</button>
+                    <button class="filter-btn" onclick="filterProjects('python', this)">Python</button>
+                </div>
+
                 <div class="projects-grid">
-                    <!-- Proyecto de limpieza -->
-                    <div class="project-item" data-aos="zoom-in-up">
-                        <img src="img/project-cleaningllc.png" alt="Vista previa del sitio web de servicios de limpieza" class="project-image" loading="lazy">
+
+                    <!-- Proyecto 1 - Zouisa -->
+                    <div class="project-item" data-category="html" data-aos="zoom-in-up">
+                        <img src="img/project-cleaningllc.png" alt="Vista previa de Zouisa Cleaning Service" class="project-image" loading="lazy">
                         <div class="project-info">
-                            <h3>Sitio Web de Servicios de Limpieza</h3>
+                            <h3>Zouisa Cleaning Service</h3>
                             <p class="project-description">
-                                Página web informativa para una empresa de servicios de limpieza, mostrando sus servicios, información de contacto y sobre la empresa. Desarrollado para establecer una presencia online profesional.
+                                Sitio web bilingüe (inglés/español) para empresa de limpieza en EEUU. Incluye páginas legales, Google Analytics, cookie banner y formulario de contacto funcional.
                             </p>
                             <div class="project-technologies">
                                 <span>HTML</span>
                                 <span>CSS</span>
-                                <span>Bootstrap 4</span>
-                                <span>JS</span>
+                                <span>JavaScript</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://yelimar11.github.io/limpiezapagina/" target="_blank" rel="noopener noreferrer" class="boton-project">Ver Demo</a>
-                                <a href="https://github.com/Yelimar11/limpiezapagina" target="_blank" rel="noopener noreferrer" class="boton-project">Ver Código</a>
+                                <a href="https://zouisa.com" target="_blank" rel="noopener noreferrer" class="boton-project">Ver Demo</a>
+                                <a href="https://github.com/Yelimar11/zouisa" target="_blank" rel="noopener noreferrer" class="boton-project">Ver Código</a>
                             </div>
                         </div>
                     </div>
-                    <!-- Proyecto 2 (Ejemplo) -->
+
+                    <!-- Proyecto 2 - JG Petroleum -->
+                    <div class="project-item" data-category="wordpress" data-aos="zoom-in-up" data-aos-delay="100">
+                        <img src="img/project-petroleum.png" alt="Vista previa de JG Petroleum Services" class="project-image" loading="lazy">
+                        <div class="project-info">
+                            <h3>JG Petroleum Services LLC</h3>
+                            <p class="project-description">
+                                Sitio web corporativo para empresa de servicios petroleros en EEUU. Diseñado con WordPress y Elementor, presenta servicios, clientes y formulario de contacto.
+                            </p>
+                            <div class="project-technologies">
+                                <span>WordPress</span>
+                                <span>Elementor</span>
+                                <span>CSS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://jgpetroleumservices.com" target="_blank" rel="noopener noreferrer" class="boton-project">Ver Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 3 - Python -->
+                    <div class="project-item" data-category="python" data-aos="zoom-in-up" data-aos-delay="200">
+                        <img src="img/project-python.png" alt="Vista previa del Generador de Recorridos" class="project-image" loading="lazy">
+                        <div class="project-info">
+                            <h3>Generador de Recorridos</h3>
+                        <p class="project-description">
+                        Aplicación de escritorio que se conecta a Gmail, extrae datos de servicios técnicos diarios y genera reportes Excel personalizados automáticamente.
+                        </p>
+                        <div class="project-technologies">
+                            <span>Python</span>
+                            <span>Tkinter</span>
+                            <span>Gmail IMAP</span>
+                            <span>openpyxl</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="img/project-python.png" target="_blank" rel="noopener noreferrer" class="boton-project">Ver Captura</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
+        </div>
+    </div>
+</section>
 
         <section id="contact">
             <div class="container">
