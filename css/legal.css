@@ -1,0 +1,90 @@
+/* ===== RESET PARA PÁGINAS LEGALES ===== */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif !important;
+    background: #f9f9f9 !important;
+    color: #333 !important;
+    line-height: 1.8 !important;
+}
+
+/* ===== HEADER ===== */
+.legal-header {
+    background: #0f0f2e !important;
+    color: white !important;
+    padding: 20px 40px !important;
+}
+
+.legal-header a {
+    color: #aac4ff !important;
+    text-decoration: none !important;
+    font-size: 14px !important;
+    display: block !important;
+}
+
+.legal-header h1 {
+    font-size: 22px !important;
+    margin-top: 8px !important;
+    color: white !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+/* ===== CONTENIDO ===== */
+.legal-main {
+    max-width: 800px !important;
+    margin: 40px auto !important;
+    padding: 0 20px 60px !important;
+}
+
+.legal-main h2 {
+    font-size: 16px !important;
+    color: #0f0f2e !important;
+    margin: 28px 0 8px !important;
+    border-left: 3px solid #378ADD !important;
+    padding-left: 10px !important;
+    border-bottom: none !important;
+    border-top: none !important;
+    border-right: none !important;
+}
+
+.legal-main p {
+    font-size: 14px !important;
+    color: #555 !important;
+    margin-bottom: 10px !important;
+}
+
+.legal-main ul {
+    padding-left: 20px !important;
+    margin-bottom: 10px !important;
+}
+
+.legal-main ul li {
+    font-size: 14px !important;
+    color: #555 !important;
+    margin-bottom: 6px !important;
+}
+
+.legal-main a {
+    color: #378ADD !important;
+}
+
+/* ===== FOOTER ===== */
+.legal-footer-simple {
+    text-align: center !important;
+    font-size: 12px !important;
+    color: #999 !important;
+    padding: 20px !important;
+    border-top: 1px solid #eee !important;
+    margin-top: 40px !important;
+}
+
+.legal-footer-simple a {
+    color: #378ADD !important;
+    text-decoration: none !important;
+    margin: 0 8px !important;
+}
