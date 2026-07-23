@@ -1,71 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KQN3VCMYMP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KQN3VCMYMP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-KQN3VCMYMP');
+  </script>
 
-  gtag('config', 'G-KQN3VCMYMP');
-</script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Términos y Condiciones – Yelimar Rivera</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #f9f9f9;
-      color: #333;
-      line-height: 1.8;
-    }
-    header {
-      background: #0f0f2e;
-      color: white;
-      padding: 20px 40px;
-    }
-    header a {
-      color: #aac4ff;
-      text-decoration: none;
-      font-size: 14px;
-    }
-    header h1 { font-size: 22px; margin-top: 8px; }
-    main {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px 60px;
-    }
-    h2 {
-      font-size: 16px;
-      color: #0f0f2e;
-      margin: 28px 0 8px;
-      border-left: 3px solid #378ADD;
-      padding-left: 10px;
-    }
-    p { font-size: 14px; color: #555; margin-bottom: 10px; }
-    ul { padding-left: 20px; }
-    ul li { font-size: 14px; color: #555; margin-bottom: 6px; }
-    footer {
-      text-align: center;
-      font-size: 12px;
-      color: #999;
-      padding: 20px;
-      border-top: 1px solid #eee;
-    }
-    footer a { color: #378ADD; text-decoration: none; }
-  </style>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
+<header class="legal-header">
   <a href="index.html">← Volver al inicio</a>
   <h1>Términos y Condiciones</h1>
 </header>
 
-<main>
-  <p>Última actualización: <strong>junio 2026</strong></p>
+<main class="legal-main">
+  <p>Última actualización: <strong>julio 2026</strong></p>
   <p>Bienvenido al portafolio web de <strong>Yelimar Rivera</strong>. Al acceder
   a este sitio, aceptas los siguientes términos.</p>
 
@@ -100,7 +67,6 @@
   <h2>7. Contacto</h2>
   <p>Para cualquier consulta sobre estos términos, contáctame en:
   <strong>yelimarrivera11@gmail.com</strong></p>
-
 </main>
 
 <footer id="footer">
@@ -113,10 +79,10 @@
                 <i class="fab fa-github"></i>
             </a>
         </div>
-        <div class="footer-legal" style="text-align:center; margin: 10px 0; font-size: 13px;">
-            <a href="privacy-policy.html" style="color:#aaa; text-decoration:none; margin: 0 10px;">Política de Privacidad</a>
-            <span style="color:#555;">|</span>
-            <a href="terms.html" style="color:#aaa; text-decoration:none; margin: 0 10px;">Términos y Condiciones</a>
+        <div class="footer-legal">
+            <a href="privacy-policy.html">Política de Privacidad</a>
+            <span>|</span>
+            <a href="terms.html">Términos y Condiciones</a>
         </div>
         <p class="footer-copyright">© 2025–2026 Yelimar Rivera. Todos los derechos reservados.</p>
     </div>
