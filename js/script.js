@@ -132,4 +132,30 @@ function filterProjects(category, btn) {
         }
     });
 }
+// ===== PARALLAX DEL HERO =====
+const heroContent = document.getElementById('hero-content');
+const heroSection = document.getElementById('hero');
 
+if (heroContent && heroSection) {
+    let ticking = false;
+
+    function updateParallax() {
+        const scrollY = window.scrollY;
+        const heroHeight = heroSection.offsetHeight;
+
+        if (scrollY < heroHeight) {
+            const move = scrollY * 0.4;
+            const fade = 1 - (scrollY / heroHeight);
+            heroContent.style.transform = `translateY(${move}px)`;
+            heroContent.style.opacity = fade;
+        }
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', function() {
+        if (!ticking) {
+            requestAnimationFrame(updateParallax);
+            ticking = true;
+        }
+    });
+}
