@@ -840,6 +840,9 @@ header nav a:hover::after {
     padding: 20px;
     border-top: 1px solid #eee;
 }
+#hero-content {
+    will-change: transform, opacity;
+}
 
 .legal-footer a {
     color: #378ADD;
