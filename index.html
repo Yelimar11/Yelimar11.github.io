@@ -68,37 +68,34 @@
 
     <main>
         <section id="hero">
-    <!-- Video de fondo -->
-    <video autoplay muted loop playsinline id="hero-video">
-        <source src="video_background.mp4" type="video/mp4">
-    </video>
-    <!-- Overlay oscuro encima del video -->
-    <div class="hero-overlay"></div>
-    <!-- Contenido encima del video -->
-    <div class="container">
-        <h1>Hello, I'm Yelimar Rivera</h1>
-        <h2>Frontend Developer in training</h2>
-        <a href="#projects" class="boton">See My Projects</a>
-    </div>
-</section>
+            <video autoplay muted loop playsinline id="hero-video">
+                <source src="video_background.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+            <div class="container" id="hero-content">
+                <h1>Hello, I'm Yelimar Rivera</h1>
+                <h2>Frontend Developer in training</h2>
+                <a href="#projects" class="boton">See My Projects</a>
+            </div>
+        </section>
 
         <section id="about-me">
             <div class="container">
                 <h2 data-aos="fade-down">About Me</h2>
                 <div class="about-my-content">
-                    <div class="about-my-text" data-aos="fade-right">
-                        <p>
+                    <div class="about-my-text">
+                        <p data-aos="fade-up" data-aos-delay="0">
                             Soy Yelimar Rivera, Ingeniera de Sistemas recién egresada con enfoque en desarrollo Frontend. 
                             Disfruto combinar lógica y creatividad para construir interfaces claras, accesibles y 
                             cuidadas hasta el último detalle — desde la animación más pequeña hasta la estructura 
                             completa de un sitio.
                         </p>
-                        <p>
+                        <p data-aos="fade-up" data-aos-delay="150">
                             He desarrollado y optimizado sitios web reales para clientes, trabajando de forma 
                             independiente en todo el ciclo: diseño, código, SEO, rendimiento y despliegue. 
                             Cada proyecto es una oportunidad para resolver problemas concretos con soluciones limpias.
                         </p>
-                        <p>
+                        <p data-aos="fade-up" data-aos-delay="300">
                             En paralelo, la ciberseguridad captura cada vez más mi atención — entender cómo proteger 
                             lo que se construye es, para mí, una extensión natural de saber construirlo bien.
                         </p>
